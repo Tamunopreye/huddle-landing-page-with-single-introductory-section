@@ -1,12 +1,13 @@
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa"
 import logo from "./images/logo.svg"
 import illustrator from "./images/illustration-mockups.svg"
 function App() {
   return (
-    <div className="font-poppins bg-Violet bg-bgImG bg-left bg-contain bg-no-repeat  h-screen overflow-auto">
-      <nav className="container mx-auto py-4 px-8">
-        <img src={logo} alt="" className="w-32 mb-4 md:w-60" />
+    <div className="font-poppins bg-Violet bg-bgImG bg-left bg-contain bg-no-repeat h-screen overflow-auto">
+      <nav className="container mx-auto pt-2 pb-2 px-8 ">
+        <img src={logo} alt="" className="w-32 mb-8 md:mb-0 md:w-60" />
       </nav>
-      <main className="container my-3 mx-auto px-8">
+      <main className="container mx-auto px-8">
         <section className="flex flex-col gap-8 text-center md:flex-row md:text-left">
           <div className="w-full">
             <img src={illustrator} alt="" className="w-full" />
@@ -24,6 +25,27 @@ function App() {
               Register
             </button>
           </div>
+        </section>
+        <section className="mt-8 flex gap-3 justify-center md:justify-end md:mt-2">
+          <a
+            href="https://web.facebook.com/emmanuel.tamuno.984"
+            className="border-white text-white border-2 p-2 rounded-full hover:text-red-400 hover:border-red-400"
+          >
+            <FaFacebookF className="text-xl" />
+          </a>
+
+          <a
+            href="https://twitter.com/yungrrich_t"
+            className="border-white text-white border-2 p-2 rounded-full hover:text-red-400 hover:border-red-400"
+          >
+            <FaTwitter className="text-xl" />
+          </a>
+          <a
+            href="#"
+            className="border-white text-white border-2 p-2 rounded-full hover:text-red-400 hover:border-red-400"
+          >
+            <FaInstagram className="text-xl" />
+          </a>
         </section>
       </main>
     </div>
