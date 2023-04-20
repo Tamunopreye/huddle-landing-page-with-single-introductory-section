@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        bgImG: 'url("./src/images/bg-desktop.svg")',
+        bgImG: 'url("/src/images/bg-desktop.svg")',
       },
       colors: {
         Violet: "hsl(257, 40%, 49%)",
